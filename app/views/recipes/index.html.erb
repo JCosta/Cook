@@ -1,8 +1,26 @@
+
 fvsdvfsvef
 <h1>Carne</h1>
+
+<div id ="timer"></div>
+	<div id ="start">Start</div>
+	<div id ="stop">Stop</div>
+	<div id ="reset">Reset</div>
+	<div id ="show">Show time</div>
+
 <% @recipes.each do |recipe| %>
+	<div id="sugestao">
+		<div id="sugest_image">
+			<div><%= image_tag(recipe.image) %></div>
+			<div><%=recipe.total_time_minutes %></div>
+			
+
 	<p><%=recipe.title %></p>
-	<p><%=recipe.image %></p>
-	<p><%=recipe.total_time_minutes %></p>
-	<% end %>
+	
+
+		</div>
+	</div>
+<% end %>
+
+
 
