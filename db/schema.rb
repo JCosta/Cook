@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130920163454) do
     t.string   "group"
     t.string   "title"
     t.string   "image"
+    t.string   "difficulty"
     t.integer  "total_time_minutes"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
