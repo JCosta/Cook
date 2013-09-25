@@ -4,6 +4,17 @@
 	<div id ="reset">Reset</div>
 	<div id ="show">Show time</div>
 -->
+<div id="categories">
+ <div id="cat_left">
+  <br>
+  <br>
+  <br>
+  Receitas rápidas e saudáveis, sempre no ponto.
+ </div>
+ <div id="cat_right">
+  <img src="">
+ </div>
+</div>
 
 <div id="titulo_sugestao">
   <h1>Sugestões do dia</h1>
@@ -19,7 +30,7 @@
         <%=recipe.total_time_minutes %>
       </div>
       <div>
-        <%=recipe.title %>
+        <%= link_to recipe.title, recipe_path(recipe.id) %>
       </div>
     </div>
   <% end %>

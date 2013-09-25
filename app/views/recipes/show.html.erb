@@ -1,7 +1,17 @@
 <div id="detail_recipe">
+	<h2><%= @recipe.title %></h2>
+
 	<div id="top_left">
-		<div id="detail_recipe_image"></div>
+		<div id="detail_recipe_image">
+			<%= image_tag(@recipe.image) %>
+		</div>
 	</div>
+
+    <ul>
+	  <% @recipe.steps.each do |step| %>
+	    <li><%= step.description %></li>
+	  <% end %>
+	</ul>
 
 	<div id="top_right">
 		<div id="detail_recipe_title"></div>
