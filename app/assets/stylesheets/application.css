@@ -1,48 +1,13 @@
-
-#page{
-	margin-right: auto;
-	margin-left: auto;
-	width: 900px;
-	background-image: url(/assets/receitaindividual.png);
-}
-
-#header{
-	width: 900px;
-	height: 200px;
-}
-
-#container{
-	width: 900px;
-	height: 500px;
-}
-
-#div_recipe{
-	width: 150px;
-	height: 300px;
-}
-
-#titulo_sugestao h1{
-	margin: 0px;
-}
-
-#box_container{
-	overflow: hidden;
-	padding: 20px;
-}
-
-#box_recipe{
-	width: 175px;
-	height: 350px;
-	float: left;
-	padding: 20px;
-}
-
-#img_box_recipe img{
-	width: 175px;
-	height: 175px;
-}
-
-#footer{
-	width: 900px;
-	height: 100px;
-}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require style
+ */

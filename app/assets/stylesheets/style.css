@@ -1,0 +1,57 @@
+
+#page{
+	margin-right: auto;
+	margin-left: auto;
+	width: 900px;
+	background-image: url(/assets/receitaindividual.png);
+}
+
+#header{
+	width: 900px;
+	height: 200px;
+}
+
+#container{
+	width: 900px;
+	height: 500px;
+}
+
+#div_recipe{
+	width: 150px;
+	height: 300px;
+}
+
+#titulo_sugestao h1{
+	margin: 0px;
+}
+
+#box_container{
+	overflow: hidden;
+	padding: 20px;
+}
+
+#box_recipe{
+	width: 175px;
+	height: 350px;
+	float: left;
+	padding: 20px;
+}
+
+#img_box_recipe img{
+	width: 175px;
+	height: 175px;
+}
+
+#footer{
+	width: 900px;
+	height: 100px;
+}
+
+#leftcol{
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0 17px 0 0;
+}
