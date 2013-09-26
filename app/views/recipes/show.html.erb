@@ -1,5 +1,4 @@
 <div id="detail_recipe">
-	<h2><%= @recipe.title %></h2>
 
 	<div id="top_left">
 		<div id="detail_recipe_image">
@@ -7,21 +6,24 @@
 		</div>
 	</div>
 
-    <ul>
-	  <% @recipe.steps.each do |step| %>
-	    <li><%= step.description %></li>
-	  <% end %>
-	</ul>
-
 	<div id="top_right">
-		<div id="detail_recipe_title"></div>
+		<div id="detail_recipe_title"><h2><%= @recipe.title %></h2></div>
 		<div id="detail_recipe_summary"></div>
 		<div id="detail_recipe_description"></div>
 	</div>
 
 	<div id="botom_left">
-		<div id="detail_recipe_directions"></div>
+		<div id="detail_recipe_directions">
+			<ul>
+	  			<% @recipe.steps.each do |step| %>
+	    		<li><%= step.description %></li>
+			</ul>
+		</div>
 		<div id="detail_recipe_time"></div>
+			<ul>
+	    		<li><%= step.time %></li>
+	  			<% end %>
+			</ul>
 	</div>
 
 	<div id="bottom_right">

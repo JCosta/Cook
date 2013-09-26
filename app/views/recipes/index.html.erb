@@ -3,12 +3,9 @@
 	<div id ="stop">Stop</div>
 	<div id ="reset">Reset</div>
 	<div id ="show">Show time</div>
--->
+
 <div id="categories">
  <div id="cat_left">
-  <br>
-  <br>
-  <br>
   Receitas rápidas e saudáveis, sempre no ponto.
  </div>
  <div id="cat_right">
@@ -22,7 +19,7 @@
 
 <div id="box_container">
 	<% @recipes.each do |recipe| %>
-    <div id="box_recipe">
+    <div id="box_recipe"> 
       <div id="img_box_recipe">
         <%= image_tag(recipe.image) %>
       </div>
@@ -34,4 +31,26 @@
       </div>
     </div>
   <% end %>
+</div>
+-->
+
+<div id="uvp_first_page">
+  Receitas rápidas e saudáveis, sempre no ponto.
+</div>
+
+<div id="sugestion">
+    <% @recipes.each do |recipe| %>
+    <div id="box_recipe"> 
+      <div id="img_box_recipe">
+        <%= image_tag(recipe.image) %>
+      </div>
+      <div>
+        <%=recipe.total_time_minutes %>
+      </div>
+      <div>
+        <%= link_to recipe.title, recipe_path(recipe.id) %>
+      </div>
+    </div>
+  <% end %>
+
 </div>
