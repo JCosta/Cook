@@ -7,7 +7,50 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="menu"></div>
+  <div id="menu">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        
+        <li><a href="#">Receitas</a>
+          <ul>
+            <li>
+              <a href="#">Peixe</a>
+              <ul>
+                <li><a href="#">10 min</a></li>
+                <li><a href="#">20 min</a></li>
+                <li><a href="#">30 min</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Carne</a>
+              <ul>
+                <li><a href="#">10 min</a></li>
+                <li><a href="#">20 min</a></li>
+                <li><a href="#">30 min</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Saladas</a>
+              <ul>
+                <li><a href="#">10 min</a></li>
+                <li><a href="#">20 min</a></li>
+                <li><a href="#">30 min</a></li>
+              </ul>  
+            </li>
+            <li>
+              <a href="#">Sopas</a>
+              <ul>
+                <li><a href="#">10 min</a></li>
+                <li><a href="#">20 min</a></li>
+                <li><a href="#">30 min</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div id="page">
     <div id="container">
       <%= yield %>

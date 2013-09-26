@@ -1,5 +1,5 @@
 body{
-	background-image: url(<%= asset_path 'pagina_template.png' %>);
+	background-image: url(/assets/pagina_template.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	margin: 0;
@@ -10,21 +10,11 @@ a{
 }
 
 #menu{
-	margin-left: 590px;
-	font-family: Helvetica;
+	margin-left: 500px;
 }
-
-#menu img{
-	padding-top: 10px;
-	}
 
 nav ul ul ul {
 	position: absolute; left: 100%; top:0;
-}
-
-nav ul ul ul li a {
-	width: 55px;
-	height: 15px;
 }
 
 nav ul ul {
@@ -40,13 +30,11 @@ nav ul ul li {
 }
 
 nav ul ul li a {
-	background: #5f6975;
 	padding: 15px 40px;
 	color: #fff;
 }
 
 nav ul ul li a:hover {
-	color: #757575;
 	background: #fff;
 }
 
