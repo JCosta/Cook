@@ -7,13 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <div id="menu"></div>
   <div id="page">
-    <div id="header"></div>
     <div id="container">
       <%= yield %>
     </div>
-    <div id="footer"></div>
+
+    <div id="footer">
+      <p>
+        <a href="http://www.facebook.com/webcookers">facebook.com/webcookers</a>
+      </p>
+      <div id="copy">
+        Web Cookers © 2013 Política de Privacidade
+      </div>
+
+    </div>
+
   </div>
   
 </body>

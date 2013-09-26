@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130920163454) do
+ActiveRecord::Schema.define(:version => 20130925165320) do
 
   create_table "recipes", :force => true do |t|
     t.string   "group"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(:version => 20130920163454) do
     t.integer  "total_time_minutes"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "steps", :force => true do |t|
+    t.integer  "time"
+    t.integer  "order"
+    t.text     "description"
+    t.integer  "recipe_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
