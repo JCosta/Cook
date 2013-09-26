@@ -52,10 +52,9 @@
       </div>
       <div id="box_recipe_ingredients">
         <ul>
-          <li>Arroz</li>
-          <li>Cenoura</li>
-          <li>Carne</li>
-          <li>Pau de Cabinda</li>
+          <% recipe.ingredients.each do |ingredient| %>
+            <li><%= ingredient.ingredient_group %></li>
+          <% end %>
         </ul>
       </div>
     </div>

@@ -12,6 +12,11 @@ $(function() {
 		$start.on('click', function() {
 			$runner.runner('toggle');
 			$start.toggleClass('started');
+			if($runner.runner('info').running) {
+				$start.text('Stop');
+			} else {
+				$start.text('Start');
+			}
 		});
 
 	});
