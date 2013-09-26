@@ -1,8 +1,14 @@
+*{box-sizing: border-box;}
 body{
 	background-image: url(<%= asset_path 'pagina_template.png' %>);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	margin: 0;
+}
+
+#detail_recipe
+{
+	overflow: hidden;
 }
 
 a{
@@ -99,6 +105,94 @@ nav ul li a:hover {
 	color: #FFF;
 }
 
+#top_left{
+
+	float: left;
+	width: 30%;
+}
+
+#top_right{
+	float: left;
+	width: 70%;
+}
+
+#detail_recipe_title{
+	padding-top: 80px;
+	font-family: helvetica;
+	font-size: 20px;
+}
+
+#detail{
+	overflow: hidden;
+}
+
+#detail_recipe_summary{
+	float: left;
+	width: 40%;
+}
+
+#detail_recipe_description{
+	float: left;
+	width: 60%;
+}
+
+#bottom{
+	overflow: hidden;
+}
+
+#bottom > div{
+	float: left;
+}
+
+#bottom_left{
+	width: 80%;
+}
+
+#bottom_right{
+	width: 20%;
+}
+li
+{
+	overflow: hidden;
+}
+.detail_description
+{
+	float: left;
+	width: 65%;
+	background-color: gray;
+}
+.detail_recipe_time
+{
+	float: left;
+	width: 15%;
+	background-color: blue;
+}
+.timer{
+	float: left;
+	width: 20%;
+	background-color: white;
+	text-align: center;
+}
+.runner
+{
+	font-family: arial;
+	font-weight: bold;
+}
+.start
+{
+	padding-left: 10px;
+	background-color: red;
+	font-family: Impallari;
+}
+#bottom li{
+	list-style: none;
+}
+#bottom ul{ padding-left: 0px;}
+#page{
+	margin: 0 auto;
+	width: 1000px;
+}
+
 #sugestion{
 	width: 875px;
 	height: 450px;
@@ -135,7 +229,10 @@ nav ul li a:hover {
 	padding-left: 20px;
 	font-weight: bold;
 }
+<<<<<<< HEAD
 
 #footer{
 	text-align: center;
 }
+=======
+>>>>>>> 05ab5d87d7f732f13f8003d98ce86d689c81fb30

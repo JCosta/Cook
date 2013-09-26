@@ -1,5 +1,4 @@
 <div id="detail_recipe">
-
 	<div id="top_left">
 		<div id="detail_recipe_image">
 			<%= image_tag(@recipe.image) %>
@@ -7,26 +6,43 @@
 	</div>
 
 	<div id="top_right">
-		<div id="detail_recipe_title"><h2><%= @recipe.title %></h2></div>
-		<div id="detail_recipe_summary"></div>
-		<div id="detail_recipe_description"></div>
-	</div>
-
-	<div id="botom_left">
-		<div id="detail_recipe_directions">
-			<ul>
-	  			<% @recipe.steps.each do |step| %>
-	    		<li><%= step.description %></li>
-			</ul>
+		<div id="detail_recipe_title">
+			<h2><%= @recipe.title %></h2>
 		</div>
-		<div id="detail_recipe_time"></div>
-			<ul>
-	    		<li><%= step.time %></li>
-	  			<% end %>
-			</ul>
+		<div id="detail">
+			<div id="detail_recipe_summary">
+				<ul class="sum_list">
+					<li>aqui minutos</li>
+					<li>aqui grupo</li>
+					<li>aqui dificuldade</li>
+				</ul>
+			</div>
+			<div id="detail_recipe_description">
+				<p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="bottom">
+	<div id="bottom_left">
+		<ul>
+  			<% @recipe.steps.each do |step| %>
+    			<li>
+    				<div class="detail_description">
+    					<%= step.description %>
+    				</div>
+					<div class="timer">
+						<span class="runner"><%= step.time %></span>
+						<span class="start">start</span>
+					</div>
+    			</li>
+    		<% end %>
+		</ul>
 	</div>
 
 	<div id="bottom_right">
-		<div id="ads"></div>
+		~pub~
 	</div>
 </div>
