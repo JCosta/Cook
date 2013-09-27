@@ -50,14 +50,10 @@ Ingredient.create ingredient_group: "Pimentos vermelhos", ingredient_description
 Ingredient.create ingredient_group: "Pimentos amarelos", ingredient_description:"2 pimentos amarelos ", recipe_id: 3 
 Ingredient.create ingredient_group: "Cebola", ingredient_description:"1 cebola picada", recipe_id: 3 
 Ingredient.create ingredient_group: "Alho", ingredient_description:"2 dentes de alho picado", recipe_id: 3 
-Ingredient.create ingredient_group: "alecrim", ingredient_description:"1 ramo de alecrim ", recipe_id: 3 
+Ingredient.create ingredient_group: "Alecrim", ingredient_description:"1 ramo de alecrim ", recipe_id: 3 
 Ingredient.create ingredient_group: "Gambas", ingredient_description:"Gambas", recipe_id: 3 
-Ingredient.create ingredient_group: "Vinho do Porto", ingredient_description:"1 dl de Vinho do Porto branco", recipe_id: 3 
 Ingredient.create ingredient_group: "Alpro", ingredient_description:"250 ml de Alpro", recipe_id: 3 
 Ingredient.create ingredient_group: "Esparguete", ingredient_description:"500 gr de esparguete integral", recipe_id: 3 
-Ingredient.create ingredient_group: "Azeite", ingredient_description:"1 colher de sopa de azeite ", recipe_id: 3 
-Ingredient.create ingredient_group: "Pimenta", ingredient_description:"Pimenta preta (q.b.)", recipe_id: 3 
-Ingredient.create ingredient_group: "Sal", ingredient_description:"Sal marinho (q.b.)", recipe_id: 3 
 
 Ingredient.create ingredient_group: "Cebolas", ingredient_description:"500 g cebola(s)", recipe_id: 4 
 Ingredient.create ingredient_group: "Batatas", ingredient_description:"250 g batata(s)", recipe_id: 4 
